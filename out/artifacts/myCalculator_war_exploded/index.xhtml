@@ -13,26 +13,60 @@
    <h:body>
       <h:form>
          <table class="center">
+             <tr>
+                 <td colspan="4"><h:inputText styleClass="screen--xx-large"
+                                              value="#{calculatorController.display}"/></td>
+             </tr>
             <tr>
-               <th><h:commandButton image="images/7.png"/> </th>
-               <th><h:commandButton image="images/8.png"/> </th>
-               <th><h:commandButton image="images/9.png"/> </th>
+               <th><h:commandButton image="images/7.png"
+                                    action="#{calculatorController.addDigit('7')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/8.png"
+                                    action="#{calculatorController.addDigit('8')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/9.png"
+                                    action="#{calculatorController.addDigit('9')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
                <th><h:commandButton image="images/divide.png"/> </th>
             </tr>
             <tr>
-               <th><h:commandButton image="images/4.png"/> </th>
-               <th><h:commandButton image="images/5.png"/> </th>
-               <th><h:commandButton image="images/6.png"/> </th>
+               <th><h:commandButton image="images/4.png"
+                                    action="#{calculatorController.addDigit('4')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/5.png"
+                                    action="#{calculatorController.addDigit('5')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/6.png"
+                                    action="#{calculatorController.addDigit('6')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
                <th><h:commandButton image="images/multiply.png"/> </th>
             </tr>
             <tr>
-               <th><h:commandButton image="images/1.png"/> </th>
-               <th><h:commandButton image="images/2.png"/> </th>
-               <th><h:commandButton image="images/3.png"/> </th>
+               <th><h:commandButton image="images/1.png"
+                                    action="#{calculatorController.addDigit('1')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/2.png"
+                                    action="#{calculatorController.addDigit('2')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
+               <th><h:commandButton image="images/3.png"
+                                    action="#{calculatorController.addDigit('3')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
                <th><h:commandButton image="images/subtract.png"/> </th>
             </tr>
             <tr>
-               <th><h:commandButton image="images/0.png"/> </th>
+               <th><h:commandButton image="images/0.png"
+                                    action="#{calculatorController.addDigit('0')}">
+                   <f:ajax render="@form"/>
+               </h:commandButton> </th>
                <th><h:commandButton image="images/AC.png"/> </th>
                <th><h:commandButton image="images/equal.png"/> </th>
                <th><h:commandButton image="images/add.png"/> </th>

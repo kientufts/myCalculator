@@ -10,6 +10,8 @@ th, td {
     height: 100px;
 }
 
-.button--centering{
-
+.screen--xx-large{
+    width: 400px;
+    height: 100px;
+    font-size: xx-large;
 }
