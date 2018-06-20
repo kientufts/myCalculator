@@ -1,0 +1,15 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+}
+
+th, td {
+    width: 100px;
+    height: 100px;
+}
+
+.button--centering{
+
+}

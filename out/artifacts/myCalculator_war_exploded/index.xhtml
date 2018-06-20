@@ -7,34 +7,35 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <h:head>
       <title>My Calculator</title>
+       <h:outputStylesheet name="index.css"/>
    </h:head>
 
    <h:body>
       <h:form>
-         <table>
+         <table class="center">
             <tr>
-               <td><h:commandButton value="7"/> </td>
-               <td><h:commandButton value="8"/> </td>
-               <td><h:commandButton value="9"/> </td>
-               <td><h:commandButton value="/"/> </td>
+               <th><h:commandButton image="images/7.png"/> </th>
+               <th><h:commandButton image="images/8.png"/> </th>
+               <th><h:commandButton image="images/9.png"/> </th>
+               <th><h:commandButton image="images/divide.png"/> </th>
             </tr>
             <tr>
-               <td><h:commandButton value="4"/> </td>
-               <td><h:commandButton value="5"/> </td>
-               <td><h:commandButton value="6"/> </td>
-               <td><h:commandButton value="*"/> </td>
+               <th><h:commandButton image="images/4.png"/> </th>
+               <th><h:commandButton image="images/5.png"/> </th>
+               <th><h:commandButton image="images/6.png"/> </th>
+               <th><h:commandButton image="images/multiply.png"/> </th>
             </tr>
             <tr>
-               <td><h:commandButton value="1"/> </td>
-               <td><h:commandButton value="2"/> </td>
-               <td><h:commandButton value="3"/> </td>
-               <td><h:commandButton value="-"/> </td>
+               <th><h:commandButton image="images/1.png"/> </th>
+               <th><h:commandButton image="images/2.png"/> </th>
+               <th><h:commandButton image="images/3.png"/> </th>
+               <th><h:commandButton image="images/subtract.png"/> </th>
             </tr>
             <tr>
-               <td><h:commandButton value="0"/> </td>
-               <td><h:commandButton value="AC"/> </td>
-               <td><h:commandButton value="="/> </td>
-               <td><h:commandButton value="+"/> </td>
+               <th><h:commandButton image="images/0.png"/> </th>
+               <th><h:commandButton image="images/AC.png"/> </th>
+               <th><h:commandButton image="images/equal.png"/> </th>
+               <th><h:commandButton image="images/add.png"/> </th>
             </tr>
          </table>
       </h:form>
